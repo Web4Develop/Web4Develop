@@ -1,0 +1,634 @@
+.green,
+.white {
+  text-shadow: 2px 2px black;
+}
+
+.green {
+  color: mediumspringgreen;
+}
+
+.white {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: default;
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: mediumspringgreen;
+}
+
+img {
+  width: 50vw;
+  height: auto;
+}
+
+.handWritingFont {
+  font-family: "Caveat", cursive;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: mediumspringgreen;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.nav a.icon {
+  background: black;
+  display: block;
+  right: 50%;
+  top: 0;
+}
+
+.nav #navLinks {
+  display: none;
+}
+
+.nav .active {
+  background-color: white;
+  color: black;
+}
+
+.nav .active .white {
+  color: mediumspringgreen;
+}
+
+.nav .active,
+.nav a:hover {
+  text-shadow: none;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.centre {
+  text-align: center;
+}
+
+.logoTop img {
+  width: 100%;
+  height: 30rem;
+  margin: 5rem auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.head {
+  margin-top: 10rem;
+  font-size: 10rem;
+}
+
+.sizeH1 {
+  font-size: 4rem;
+}
+
+.head,
+.sizeH1 {
+  font-weight: 100;
+}
+
+.gridx2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.gridx2 .profilePicture {
+  border-radius: 50%;
+  width: 12rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background: #16e08d;
+  min-width: 160px;
+  -webkit-box-shadow: 0 8px 16px 0 black;
+          box-shadow: 0 8px 16px 0 black;
+  padding: 12px 16px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdownContent img {
+  width: 300px;
+  height: 200px;
+}
+
+.dropdownContent:hover {
+  display: block;
+}
+
+.smallBanner {
+  font-size: 2rem;
+  text-align: right;
+  background: mediumspringgreen;
+  border-radius: 1.5rem;
+  width: 30rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.background {
+  background-image: url(../../images/background/banner-904884_1920.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin-top: 5rem;
+}
+
+.background .backgroundContent {
+  color: white;
+}
+
+.background .backgroundContent .border {
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 1px black;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.background .backgroundContent .border a {
+  color: mediumspringgreen;
+}
+
+.background .backgroundContent .border a:hover {
+  color: white;
+}
+
+.background .unorganiseList {
+  list-style-type: none;
+}
+
+.background .unorganiseList li {
+  display: inline-block;
+  margin: 0 3rem;
+}
+
+.background .unorganiseList .marginRight {
+  margin-right: 0.5rem;
+}
+
+.title {
+  color: mediumspringgreen;
+  border-bottom: solid 0.5rem;
+  background: white;
+  padding: 3rem 0;
+  margin: 10rem 0 5rem;
+  text-transform: capitalize;
+}
+
+.floatRight {
+  display: float;
+  float: right;
+}
+
+.paragraph {
+  line-height: 2.5rem;
+  width: 80%;
+  margin: 3rem auto 5rem;
+  font-size: 1.5rem;
+}
+
+.paragraph .profilePicture {
+  border-radius: 50%;
+  width: 22rem;
+  margin: 0 0 2rem 2rem;
+  border: solid 0.2rem mediumspringgreen;
+  padding: 0.3rem;
+}
+
+.border {
+  border: solid 3px;
+  border-radius: 3rem;
+  border-color: mediumspringgreen;
+  width: 90%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.border .smallBanner {
+  margin: 2rem auto 4rem;
+  text-align: center;
+}
+
+.border .gridx2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 0;
+}
+
+.border img {
+  width: 100%;
+  height: 100%;
+  border: solid 1rem white;
+}
+
+.border .button {
+  font-size: 2rem;
+}
+
+.border .lineHeight {
+  line-height: 3rem;
+}
+
+.border .button,
+.border .fontAewsome {
+  border-bottom: solid 0.2rem black;
+  padding-bottom: 0.3rem;
+}
+
+.border .button:hover,
+.border .fontAewsome:hover {
+  border-bottom-color: mediumspringgreen;
+}
+
+.title,
+.button:hover,
+.fontAwesome:hover {
+  text-shadow: 1px 1px 1px black;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 11.5rem;
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: mediumspringgreen;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+#backToTop:hover {
+  background-color: white;
+  color: mediumspringgreen;
+  border: solid 1px mediumspringgreen;
+}
+
+.footer {
+  margin: 6rem 0 0;
+  background: black;
+  color: white;
+}
+
+.footer .logo,
+.footer .logoRight {
+  width: 5rem;
+  display: float;
+  position: relative;
+  top: 2rem;
+}
+
+.footer .logo {
+  float: left;
+}
+
+.footer .logoRight {
+  float: right;
+}
+
+.footer p {
+  padding: 2rem 0;
+  font-style: italic;
+}
+
+body,
+html {
+  height: auto;
+  margin: 0;
+  font-family: Arial;
+  background: white;
+}
+
+.backgroundTitle {
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.tabLink {
+  background: #323232;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tabLink:hover {
+  background-color: white;
+  color: black;
+}
+
+.tabImage {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 3rem 2rem;
+  border: solid 0.2rem mediumspringgreen;
+  -webkit-box-shadow: 5px 5px 10px 1px black;
+          box-shadow: 5px 5px 10px 1px black;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  height: 40rem;
+}
+
+.tabImage p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.tabImage a {
+  display: block;
+  color: black;
+  border-radius: 2rem;
+  padding: 1.3rem;
+}
+
+.tabImage a:hover {
+  background: mediumspringgreen;
+}
+
+.tabImage img {
+  max-width: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50%;
+}
+
+.tabContent {
+  color: black;
+  display: block;
+  padding: 100px 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.tabContent .fullPageTabsTitle {
+  margin: 17rem 0 5rem;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal,
+.modalTopDesign {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalContent {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 70rem;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: mediumspringgreen;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 2rem;
+}
+
+.modalContent,
+#caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: mediumspringgreen;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.white {
+  text-shadow: 2px 1px black;
+}
+
+.nav .navMobile {
+  overflow: hidden;
+  background: mediumspringgreen;
+}
+
+.nav .navMobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.nav .navMobile a.icon {
+  background: black;
+  display: block;
+  right: 50%;
+  top: 0;
+}
+
+.nav .navMobile #navLinks {
+  display: none;
+}
+
+.nav .navMobile .active {
+  background-color: white;
+  color: black;
+}
+
+.nav .navMobile .active .white {
+  color: mediumspringgreen;
+}
+
+.nav .navMobile .active,
+.nav .navMobile a:hover {
+  text-shadow: none;
+}
+
+.nav .navMobile a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav .navMobile a:hover .green,
+.nav .navMobile a:hover .white {
+  color: mediumspringgreen;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav .navDesktop a {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .backgroundContent .unorganiseList li {
+    display: block;
+  }
+  .smallBanner {
+    width: 20rem;
+  }
+  .paragraph .firstBlock {
+    padding-top: 30rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .nav .navMobile {
+    display: none;
+  }
+  .nav .navDesktop a {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modalContent {
+    width: 100%;
+  }
+  .head {
+    font-size: 5rem;
+  }
+  .logoTop {
+    display: none;
+  }
+  .logoWords {
+    display: block;
+  }
+  .tabImage img {
+    max-width: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .tabContent .fullPageTabsTitle {
+    margin: 10rem 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .border .gridx2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .tabLink {
+    width: 50%;
+  }
+  .tabLinkAll {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.white {
+  text-shadow: 2px 1px $black;
+}
+
+.nav {
+  .navMobile {
+    overflow: hidden;
+    background: $green;
+    // position: relative;
+    a {
+      color: $white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      // nav links
+      display: block;
+      text-align: center;
+      text-shadow: 2px 2px $black;
+    }
+    a.icon {
+      background: $black;
+      // display: block;
+      display: block;
+      right: 50%;
+      top: 0;
+      // position: absolute;
+    }
+    #navLinks {
+      display: none;
+    }
+    .active {
+      background-color: $white;
+      color: black;
+      .white {
+        color: $green;
+      }
+    }
+    .active,
+    a:hover {
+      text-shadow: none;
+    }
+    a:hover {
+      background-color: $white;
+      color: $black;
+      .green,
+      .white {
+        color: rgb(0, 250, 154);
+      }
+    }
+  }
+}

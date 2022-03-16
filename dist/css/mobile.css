@@ -1,0 +1,62 @@
+.white {
+  color: white;
+}
+
+.green {
+  color: mediumspringgreen;
+}
+
+.white {
+  text-shadow: 2px 1px black;
+}
+
+.nav .navMobile {
+  overflow: hidden;
+  background: mediumspringgreen;
+}
+
+.nav .navMobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.nav .navMobile a.icon {
+  background: black;
+  display: block;
+  right: 50%;
+  top: 0;
+}
+
+.nav .navMobile #navLinks {
+  display: none;
+}
+
+.nav .navMobile .active {
+  background-color: white;
+  color: black;
+}
+
+.nav .navMobile .active .white {
+  color: mediumspringgreen;
+}
+
+.nav .navMobile .active,
+.nav .navMobile a:hover {
+  text-shadow: none;
+}
+
+.nav .navMobile a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav .navMobile a:hover .green,
+.nav .navMobile a:hover .white {
+  color: mediumspringgreen;
+}
+/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Web 4 Develop Projects</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/W4D/W4D largeico.ico" />
+
+    <link rel="stylesheet" href="../dist/css/style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b2eabad3ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="navMobile">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <div id="navLinks">
+          <a href="../index.html#home"
+            >Web <span class="white">4</span> Develop</a
+          >
+          <a href="../index.html#whatIDo">What I Do</a>
+          <a href="../index.html#whatIKnow">What I Know</a>
+          <a href="../index.html#whoIAm">Who I Am</a>
+          <a href="../index.html#myWork">My Work</a>
+          <a class="active" href="#moreProjects">More Projects</a>
+          <a href="https://github.com/Web4Develop" target="blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="navDesktop">
+        <div>
+          <a href="../index.html#home"
+            >Web <span class="white">4</span> Develop</a
+          >
+          <a href="../index.html#whatIDo">What I Do</a>
+          <a href="../index.html#whatIKnow">What I Know</a>
+          <a href="../index.html#whoIAm">Who I Am</a>
+          <a href="../index.html#myWork">My Work</a>
+          <a class="active" href="#moreProjects">More Projects</a>
+          <a href="https://github.com/Web4Develop" target="blank">GitHub</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="backgroundTitle">
+      <h1 class="centre head">Web <span class="green">4</span> Develop</h1>
+
+      <div class="gridx2">
+        <img
+          class="profilePicture"
+          src="../images/W4D/me2.jpg"
+          alt="Profile Picture"
+        />
+
+        <h1 class="centre sizeH1 handWritingFont">
+          Patrick
+          <br />
+          Paterson
+        </h1>
+      </div>
+    </div>
+
+    <div id="moreProjects">
+      <button
+        class="tabLink tabLinkAll"
+        id="defaultOpen"
+        onclick="openPage('all', this, 'red')"
+      >
+        All
+      </button>
+
+      <!-- <button class="tabLink" onclick="openPage('calculator', this, 'green')">
+        Calculator
+      </button> -->
+
+      <button class="tabLink" onclick="openPage('codeCademy', this, 'blue')">
+        CodeCademy JavaScript
+      </button>
+
+      <button class="tabLink" onclick="openPage('codePen', this, 'orange')">
+        Code Pen
+      </button>
+
+      <button class="tabLink" onclick="openPage('emails', this, 'blue')">
+        Email
+      </button>
+
+      <button
+        class="tabLink"
+        onclick="openPage('frontEndMentor', this, 'blueviolet')"
+      >
+        Front End Mentor
+      </button>
+
+      <button class="tabLink" onclick="openPage('games', this, 'teal')">
+        Game
+      </button>
+
+      <button class="tabLink" onclick="openPage('googleMaps', this, 'yellow')">
+        Google Map
+      </button>
+
+      <button
+        class="tabLink"
+        onclick="openPage('landingPages', this, 'olivedrab')"
+      >
+        Landing Page
+      </button>
+
+      <button class="tabLink" onclick="openPage('modal', this, 'aquamarine')">
+        Modal
+      </button>
+
+      <button class="tabLink" onclick="openPage('others', this, 'steelblue')">
+        Others
+      </button>
+
+      <button class="tabLink" onclick="openPage('websites', this, 'violet')">
+        Websites
+      </button>
+    </div>
+
+    <div id="all" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop Projects
+      </h1>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/calculator/calculator.png"
+        />
+        <p>
+          <a href="#">
+            Calculator page to test and
+            <br />
+            Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/codeCademy/animationsJS.png"
+          alt="CodeCademy Animated Header Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/AnimatedHeader/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodeCademy page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/AnimatedHeader"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodeCademy source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/codePen/ballGlowing.png"
+          alt="CodePen ball Glowing Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/codePenPulse/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodePen page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/codePenPulse"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodePen source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/emails/duneLondon/emailInlineDuneLondon.png"
+          alt="Dune London Promotional Email Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/EmailProductDuneLondon/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Promotional
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/EmailProductDuneLondon"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Promotional
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/emails/argos/emailOrderArgos.png"
+          alt="Argos Order Receipt Email Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/argosOrderReceiptEmail/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Orders / Receipts
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/argosOrderReceiptEmail"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Orders / Receipts
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/frontEndMentor/nft.png"
+          alt="FrontEnd Mentor NFT Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/nftPreviewCardWeb4Develop/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor NFT
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/nftPreviewCardWeb4Develop"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor NFT
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/frontEndMentor/qrCode.png"
+          alt="FrontEnd Mentor QR Code Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/qrCodeWeb4Develop/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor QR
+            <br />
+            Code page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/qrCodeWeb4Develop"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor QR
+            <br />
+            Code source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/games/guess my number (game)/guessMyNumber(Game).png"
+          alt="Guess My Number x2 Players Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/GuessMyNumber_Game/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Guess My Number x2
+            <br />
+            Player page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/GuessMyNumber_Game"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Guess My Number x2
+            <br />
+            Player source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/games/guessMyNumber.png"
+        />
+        <p>
+          <a href="#">
+            Guess My Random Number Game page
+            <br />
+            to test and Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/googleMpas/googleMap.png"
+          alt="Google Maps Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a href="#moreProjects" title="Click to Go Back to Category Top">
+            Google Maps page to test
+            <br />
+            and Source Code unavailable
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/landingPages/shazzwear ltd/shazzWearLanding.png"
+          alt="ShazzWear Landing Page Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/ShazzWearLtdLandingPage/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            ShazzWear Ltd Landing
+            <br />
+            Page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/ShazzWearLtdLandingPage"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            ShazzWear Ltd Landing
+            <br />
+            Page source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/landingPages/twitter/twitterLandingPage.png"
+          alt="Twitter Landing Page Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/Twitter/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Twitter Landing Page
+            <br />
+            to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/Twitter"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Twitter Landing Page
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/modal/modal.png"
+          alt="Modal Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/modal/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Modal page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/modal"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Modal source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx1.png"
+          alt="CakeMaxx Promotional Video 1-3 Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxx pt1 with music.mp4"
+            target="blank"
+            title="Click to Play in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 1&#45;3
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx2.png"
+          alt="CakeMaxx Promotional Video 2-3 Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxx Pt2 with music.mp4"
+            target="blank"
+            title="Click to Play in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 2&#45;3
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx3.png"
+          alt="CakeMaxx Promotional Video 3-3 Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxxVanilla with music.mp4"
+            target="blank"
+            title="Click to Play in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 3&#45;3
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/av mobile tyres/avMobileTyres.png"
+          alt="AV Mobile Tyres Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/avMobileTyres/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            AV Mobile Tyres page
+            <br />
+            to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/avMobileTyres"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            AV Mobile Tyres
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/cakeMaxx/cakeMaxx.png"
+        />
+        <p>
+          <a href="#">
+            CakeMaxx page to test and
+            <br />
+            Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/colourTheory/colourTheory.png"
+        />
+        <p>
+          <a href="#">
+            Colour Theory page to test and
+            <br />
+            Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/colourTheory/colourTheoryWiki.png"
+        />
+        <p>
+          <a href="#">
+            Colour Theory Wiki page to test
+            <br />
+            and Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/djNails/daNails.png"
+        />
+        <p>
+          <a href="#">
+            DJ Nails page to test and
+            <br />
+            Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/demoGaming/demoGaming.png"
+          alt="Demo Gaming Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/GamingDemo/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Demo Gaming page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/GamingDemo"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Demo Gaming source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/lorimers/lorimersHome.png"
+          alt="Rebuild of Lorimers Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/LorimersRebuild/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Lorimers page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/LorimersRebuild"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Lorimers source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/shazzWear/shazzwear.png"
+          alt="Shazzwear"
+        />
+        <p>
+          <a href="#">
+            ShazzWear Ltd website page to test
+            <br />
+            and Source Code unavailable
+          </a>
+        </p>
+      </div> -->
+    </div>
+
+    <!-- <div id="calculator" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web 4 Develop Calculator Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/calculator/calculator.png"
+        />
+      </div>
+    </div> -->
+
+    <div id="codeCademy" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web <span class="green">4</span> Develop CodeCademy Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/codeCademy/animationsJS.png"
+          alt="CodeCademy Animated Header Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/AnimatedHeader/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodeCademy page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/AnimatedHeader"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodeCademy source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="codePen" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web <span class="green">4</span> Develop CodePen Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/codePen/ballGlowing.png"
+          alt="CodePen ball Glowing Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/codePenPulse/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodePen page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/codePenPulse"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            CodePen source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="emails" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop Email Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/emails/duneLondon/emailInlineDuneLondon.png"
+          alt="Dune London Promotional Email Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/EmailProductDuneLondon/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Promotional
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/EmailProductDuneLondon"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Promotional
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/emails/argos/emailOrderArgos.png"
+          alt="Argos Order Receipt Email Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/argosOrderReceiptEmail/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Orders / Receipts
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/argosOrderReceiptEmail"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Email Orders / Receipts
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="frontEndMentor" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop FrontEnd Mentor Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/frontEndMentor/nft.png"
+          alt="FrontEnd Mentor NFT Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/nftPreviewCardWeb4Develop/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor NFT
+            <br />
+            page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/nftPreviewCardWeb4Develop"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor NFT
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/frontEndMentor/qrCode.png"
+          alt="FrontEnd Mentor QR Code Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/qrCodeWeb4Develop/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor QR
+            <br />
+            Code page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/qrCodeWeb4Develop"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            FrontEnd Mentor QR
+            <br />
+            Code source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="games" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web <span class="green">4</span> Develop Game Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/games/guess my number (game)/guessMyNumber(Game).png"
+          alt="Guess My Number Game x2 Players Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/GuessMyNumber_Game/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Guess My Number x2
+            <br />
+            Player page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/GuessMyNumber_Game"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Guess My Number x2
+            <br />
+            Player source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/games/guessMyNumber.png"
+        />
+      </div> -->
+    </div>
+
+    <div id="googleMaps" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web <span class="green">4</span> Develop Google Map Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/googleMpas/googleMap.png"
+          alt="Google Maps Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a href="#moreProjects" title="Click to Go Back to Category Top">
+            Google Maps page to test
+            <br />
+            and Source Code unavailable
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="landingPages" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop Landing Page Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/landingPages/shazzwear ltd/shazzWearLanding.png"
+          alt="ShazzWear Landing Page Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/ShazzWearLtdLandingPage/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            ShazzWear Ltd Landing
+            <br />
+            Page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/ShazzWearLtdLandingPage"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            ShazzWear Ltd Landing
+            <br />
+            Page source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/landingPages/twitter/twitterLandingPage.png"
+          alt="Twitter Landing Page Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/Twitter/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Twitter Landing Page
+            <br />
+            to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/Twitter"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Twitter Landing Page
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="modal" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        Web <span class="green">4</span> Develop Modal Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/modal/modal.png"
+          alt="Modal Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/modal/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Modal page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/modal"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Modal source code
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="others" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop Other Projects
+      </h1>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx1.png"
+          alt="Picture of a Phone, Tablet, Laptop and Desktop"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxx pt1 with music.mp4"
+            target="blank"
+            title="Click to Watch in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 1&#45;3
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx2.png"
+          alt="CakeMaxx Promotional Video 2-3 Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxx Pt2 with music.mp4"
+            target="blank"
+            title="Click to Play in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 2&#45;3
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/others/cakeMaxx3.png"
+          alt="CakeMaxx Promotional Video 3-3 Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="../videos/CakeMaxxVanilla with music.mp4"
+            target="blank"
+            title="Click to Play in New Page"
+          >
+            CakeMaxx Promotional
+            <br />
+            Video 3&#45;3
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="websites" class="tabContent">
+      <h1 class="sizeH1 fullPageTabsTitle">
+        All Web <span class="green">4</span> Develop Website Projects
+      </h1>
+      <div class="tabImage column">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/av mobile tyres/avMobileTyres.png"
+          alt="AV Mobile Tyres Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/avMobileTyres/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            AV Mobile Tyres page
+            <br />
+            to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/avMobileTyres"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            AV Mobile Tyres
+            <br />
+            source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/cakeMaxx/cakeMaxx.png"
+          alt="CakeMaxx"
+        />
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/colourTheory/colourTheory.png"
+        />
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/colourTheory/colourTheoryWiki.png"
+        />
+      </div> -->
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/djNails/daNails.png"
+        />
+      </div> -->
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/demoGaming/demoGaming.png"
+          alt="Demo Gaming Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/GamingDemo/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Demo Gaming page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/GamingDemo"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Demo Gaming source code
+          </a>
+        </p>
+      </div>
+      <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="../images/websites/lorimers/lorimersHome.png"
+          alt="Rebuild of Lorimers Screenshot"
+          title="Click to Enlarge"
+        />
+        <p>
+          <a
+            href="https://web4develop.github.io/LorimersRebuild/"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Lorimers page to test
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/Web4Develop/LorimersRebuild"
+            target="blank"
+            title="Click to Open in New Page"
+          >
+            Lorimers source code
+          </a>
+        </p>
+      </div>
+      <!-- <div class="tabImage">
+        <img
+          class="myImages"
+          id="myImg"
+          src="/images/websites/shazzWear/shazzwear.png"
+        />
+      </div> -->
+    </div>
+
+    <div>
+      <button
+        id="backToTop"
+        type="button"
+        onclick="backToTopFunction()"
+        title="Click to Go Back to Top"
+      >
+        Back To Top
+      </button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modalContent" id="image01" />
+      <div id="caption"></div>
+    </div>
+
+    <div class="footer centre">
+      <span>
+        <img class="logo" src="../images/W4D/W4D largeico.ico" />
+      </span>
+      <span>
+        <img class="logoRight" src="../images/W4D/W4D largeico.ico" />
+      </span>
+      <p>
+        Copyright&copy; <span id="year"></span> Web
+        <span class="green">4</span> Develop.
+      </p>
+      <p>All Rights Reserved. Powered by Github.</p>
+    </div>
+
+    <script src="../js/currentYear/currentYear.js"></script>
+    <script src="../js/fullPageTabs/fullPageTabs.js"></script>
+    <script src="../js/modalImage/modalImage.js"></script>
+    <script src="../js/backToTop/bactToTop.js"></script>
+    <script src="../js/navMobileMenu/mobileNavMenu.js"></script>
+  </body>
+</html>
