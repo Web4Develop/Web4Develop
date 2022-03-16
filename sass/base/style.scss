@@ -115,7 +115,7 @@ img {
 
 .gridx2 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   margin-bottom: 5rem;
   margin-top: 5rem;
   .profilePicture {
@@ -223,12 +223,14 @@ img {
   border: solid 3px;
   border-radius: 3rem;
   border-color: $green;
-  width: 90%;
+  width: 100%;
   padding: 2rem;
   margin: 0 auto;
   .smallBanner {
-    margin: 2rem auto 4rem;
-    text-align: center;
+    margin: 2rem auto 0rem;
+    width: 100%;
+    // font-size: 100%;
+    // overflow: auto;
   }
   .gridx2 {
     display: grid;
@@ -268,7 +270,7 @@ img {
   display: none;
   position: fixed;
   bottom: 11.5rem;
-  right: 2rem;
+  right: -3rem;
   z-index: 99;
   border: none;
   outline: none;
@@ -279,6 +281,7 @@ img {
   border-radius: 50%;
   font-size: 1.3rem;
   transition: 0.5s ease-in;
+  transform: rotate(90deg);
 }
 #backToTop:hover {
   background-color: $white;
@@ -344,16 +347,17 @@ html {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  margin: 3rem 2rem;
+  margin: 3rem auto;
   border: solid 0.2rem $green;
   box-shadow: 5px 5px 10px 1px $black;
   border-radius: 2rem;
   padding: 1.5rem;
   height: 40rem;
+  overflow: auto;
+  width: 100%;
   p {
     // margin: 2rem 0;
     font-size: 1.5rem;
-    overflow: hidden;
   }
   a {
     display: block;
@@ -536,9 +540,19 @@ html {
       padding-top: 30rem;
     }
   }
+  .tabImage {
+    img {
+      max-width: 30rem;
+      object-fit: cover;
+      height: 30%;
+    }
+  }
 }
 
 @media only screen and (min-width: 700px) {
+  .gridx2 {
+    grid-template-columns: auto auto;
+  }
   .nav {
     .navMobile {
       display: none;
@@ -549,6 +563,11 @@ html {
       a {
         display: inline-block;
       }
+    }
+  }
+  .border {
+    .smallBanner {
+      width: 30rem;
     }
   }
 }
@@ -566,12 +585,7 @@ html {
   .logoWords {
     display: block;
   }
-  .tabImage {
-    img {
-      max-width: 30rem;
-      object-fit: cover;
-    }
-  }
+  // tab images was here
 }
 
 @media only screen and (min-width: 900px) {
@@ -579,6 +593,10 @@ html {
     .fullPageTabsTitle {
       margin: 10rem 0 5rem;
     }
+  }
+  .tabImage {
+    width: auto;
+    margin: 3rem 2rem;
   }
 }
 
@@ -590,6 +608,7 @@ html {
   }
   .tabLink {
     width: 50%;
+    height: 5rem;
   }
   .tabLinkAll {
     width: 100%;
