@@ -45,6 +45,19 @@ img {
   font-family: "Caveat", cursive;
 }
 
+// groups
+.nav .navDesktop a span,
+.nav .navMobile a span {
+  cursor: pointer;
+}
+
+.nav .navDesktop a:hover .green,
+.nav .navDesktop a:hover .white,
+.nav .navMobile a:hover .green,
+.nav .navMobile a:hover .white {
+  color: $green;
+}
+
 // home page *****
 .nav {
   overflow: hidden;
@@ -166,8 +179,9 @@ img {
   margin-top: 5rem;
   .backgroundContent {
     color: $white;
+    padding: 0 0 100px;
     .border {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       text-shadow: 3px 2px 1px $black;
       font-size: 2rem;
       line-height: 4rem;
@@ -179,14 +193,10 @@ img {
       }
     }
   }
-  .unorganiseList {
-    list-style-type: none;
-    li {
+  .listOfSkills {
+    p {
       display: inline-block;
-      margin: 0 3rem;
-    }
-    .marginRight {
-      margin-right: 0.5rem;
+      margin: 10px;
     }
   }
 }
@@ -219,6 +229,7 @@ img {
     padding: 0.3rem;
   }
 }
+
 .border {
   border: solid 3px;
   border-radius: 3rem;
@@ -229,8 +240,6 @@ img {
   .smallBanner {
     margin: 2rem auto 0rem;
     width: 100%;
-    // font-size: 100%;
-    // overflow: auto;
   }
   .gridx2 {
     display: grid;
@@ -249,13 +258,16 @@ img {
     line-height: 3rem;
   }
 
+  .fontAwesome {
+    cursor: pointer;
+  }
   .button,
-  .fontAewsome {
+  .fontAwesome {
     border-bottom: solid 0.2rem $black;
     padding-bottom: 0.3rem;
   }
   .button:hover,
-  .fontAewsome:hover {
+  .fontAwesome:hover {
     border-bottom-color: $green;
   }
 }
@@ -288,6 +300,9 @@ img {
   color: $green;
   border: solid 1px $green;
 }
+#backToTop:active {
+  color: $green;
+}
 
 .footer {
   margin: 6rem 0 0;
@@ -309,17 +324,14 @@ img {
   p {
     padding: 2rem 0;
     font-style: italic;
+    span:nth-of-type(2) {
+      display: inline-block;
+      margin-top: 10px;
+    }
   }
 }
 
 // full page tabs *****
-body,
-html {
-  height: auto;
-  margin: 0;
-  font-family: Arial;
-  background: $white;
-}
 
 .backgroundTitle {
   background: $white;
@@ -505,10 +517,6 @@ html {
     a:hover {
       background-color: $white;
       color: $black;
-      .green,
-      .white {
-        color: rgb(0, 250, 154);
-      }
     }
   }
 }
@@ -524,9 +532,48 @@ html {
 }
 
 // media *****
+@media (hover: none) {
+  .nav a:hover,
+  .nav .navMobile a:nth-of-type(2):hover,
+  .nav .navMobile a:nth-of-type(3):hover,
+  .nav .navMobile a:nth-of-type(4):hover,
+  .nav .navMobile a:nth-of-type(5):hover,
+  .nav .navMobile a:nth-of-type(6):hover,
+  .nav .navMobile a:nth-of-type(7):hover {
+    text-shadow: 2px 2px $black;
+    color: $white;
+    background: $green;
+  }
+
+  .nav .navMobile a:nth-of-type(1):hover {
+    background: $black;
+    color: $white;
+  }
+
+  .background .backgroundContent .border a:hover {
+    color: $green;
+  }
+
+  .border .tabContent .tabImage p a:hover,
+  .tabImage a:hover {
+    background: $white;
+  }
+
+  .border .fontAwesome:hover,
+  .border .button:hover {
+    color: black;
+    border-bottom-color: $black;
+  }
+
+  #backToTop:hover {
+    background: $green;
+    color: $white;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .backgroundContent {
-    .unorganiseList {
+    .listOfSkills {
       li {
         display: block;
       }

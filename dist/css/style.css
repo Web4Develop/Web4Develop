@@ -40,6 +40,18 @@ img {
   font-family: "Caveat", cursive;
 }
 
+.nav .navDesktop a span,
+.nav .navMobile a span {
+  cursor: pointer;
+}
+
+.nav .navDesktop a:hover .green,
+.nav .navDesktop a:hover .white,
+.nav .navMobile a:hover .green,
+.nav .navMobile a:hover .white {
+  color: mediumspringgreen;
+}
+
 .nav {
   overflow: hidden;
   background-color: mediumspringgreen;
@@ -173,10 +185,11 @@ img {
 
 .background .backgroundContent {
   color: white;
+  padding: 0 0 100px;
 }
 
 .background .backgroundContent .border {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   text-shadow: 3px 2px 1px black;
   font-size: 2rem;
   line-height: 4rem;
@@ -190,17 +203,9 @@ img {
   color: white;
 }
 
-.background .unorganiseList {
-  list-style-type: none;
-}
-
-.background .unorganiseList li {
+.background .listOfSkills p {
   display: inline-block;
-  margin: 0 3rem;
-}
-
-.background .unorganiseList .marginRight {
-  margin-right: 0.5rem;
+  margin: 10px;
 }
 
 .title {
@@ -268,14 +273,18 @@ img {
   line-height: 3rem;
 }
 
+.border .fontAwesome {
+  cursor: pointer;
+}
+
 .border .button,
-.border .fontAewsome {
+.border .fontAwesome {
   border-bottom: solid 0.2rem black;
   padding-bottom: 0.3rem;
 }
 
 .border .button:hover,
-.border .fontAewsome:hover {
+.border .fontAwesome:hover {
   border-bottom-color: mediumspringgreen;
 }
 
@@ -311,6 +320,10 @@ img {
   border: solid 1px mediumspringgreen;
 }
 
+#backToTop:active {
+  color: mediumspringgreen;
+}
+
 .footer {
   margin: 6rem 0 0;
   background: black;
@@ -338,12 +351,9 @@ img {
   font-style: italic;
 }
 
-body,
-html {
-  height: auto;
-  margin: 0;
-  font-family: Arial;
-  background: white;
+.footer p span:nth-of-type(2) {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .backgroundTitle {
@@ -561,11 +571,6 @@ html {
   color: black;
 }
 
-.nav .navMobile a:hover .green,
-.nav .navMobile a:hover .white {
-  color: mediumspringgreen;
-}
-
 .nav {
   text-align: center;
 }
@@ -574,8 +579,42 @@ html {
   display: none;
 }
 
+@media (hover: none) {
+  .nav a:hover,
+  .nav .navMobile a:nth-of-type(2):hover,
+  .nav .navMobile a:nth-of-type(3):hover,
+  .nav .navMobile a:nth-of-type(4):hover,
+  .nav .navMobile a:nth-of-type(5):hover,
+  .nav .navMobile a:nth-of-type(6):hover,
+  .nav .navMobile a:nth-of-type(7):hover {
+    text-shadow: 2px 2px black;
+    color: white;
+    background: mediumspringgreen;
+  }
+  .nav .navMobile a:nth-of-type(1):hover {
+    background: black;
+    color: white;
+  }
+  .background .backgroundContent .border a:hover {
+    color: mediumspringgreen;
+  }
+  .border .tabContent .tabImage p a:hover,
+  .tabImage a:hover {
+    background: white;
+  }
+  .border .fontAwesome:hover,
+  .border .button:hover {
+    color: black;
+    border-bottom-color: black;
+  }
+  #backToTop:hover {
+    background: mediumspringgreen;
+    color: white;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .backgroundContent .unorganiseList li {
+  .backgroundContent .listOfSkills li {
     display: block;
   }
   .smallBanner {
